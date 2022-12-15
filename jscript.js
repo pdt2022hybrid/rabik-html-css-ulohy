@@ -3,7 +3,7 @@ var computerScore = 0;
 
 
 function begin() {
-var playerChoice = prompt("   hráč: " + playerScore + "                                                                            počítač: " + computerScore + "\n              vyber si kamen = k, papier = p alebo noznice = n");
+var playerChoice = prompt("   hráč: " + playerScore + "   počítač: " + computerScore + "\nvyber si kamen = k, papier = p alebo noznice = n");
 var computerChoice = Math.random();
 
 // RNG
@@ -18,38 +18,38 @@ var computerChoice = Math.random();
 
     var  compare = function (player,computer){
         if(player === computer){
-            alert ("remíza");
+            alert ("hráč-" + player + "                                počítač-" + computer + "\nremíza");
             computerScore == computerScore ++;
             playerScore == playerScore ++;
             return 0;
         }
         if(player === "k"){
             if(computer === "n"){
-                alert ("kameň vyhráva")
+                alert ("hráč-" + player + "                                počítač-" + computer + "\nkameň vyhráva")
                 playerScore == playerScore ++;
             }
             else{
-                alert ("papier vyhráva")
+                alert ("hráč-" + player + "                                počítač-" + computer + "\npapier vyhráva")
                 computerScore == computerScore ++;
             }
         }
         if(player === "p"){
             if(computer === "k"){
-                alert ("papier vyhráva")
+                alert  ("hráč-" + player + "                                počítač-" + computer + "\npapier vyhráva")
                 playerScore == playerScore ++;
             }
             else{
-                alert ("noznice vyhrávajú")
+                alert  ("hráč-" + player + "                                počítač-" + computer + "\nnoznice vyhrávajú")
                 computerScore == computerScore ++;
             }
         }
         if(player === "n"){
             if(computer === "k"){
-                alert ("kameň vyhráva")
+                alert ("hráč-" + player + "                                počítač-" + computer + "\nkameň vyhráva")
                 playerScore == playerScore ++;
             }
             else{
-                alert ("nožnice vyhrávajú")
+                alert  ("hráč-" + player + "                                počítač-" + computer + "\nnožnice vyhrávajú")
                 computerScore == computerScore ++;
             }
         }
